@@ -1,0 +1,3 @@
+exchanger:
+    id: exchanger_190
+    routeKey: exchanger_route
