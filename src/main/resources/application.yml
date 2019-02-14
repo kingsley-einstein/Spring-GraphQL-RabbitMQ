@@ -1,3 +1,12 @@
 exchanger:
     id: exchanger_190
     routeKey: exchanger_route
+
+spring:
+    datasource:
+        url: jdbc:mysql://localhost:3306/mqdb
+        username: root
+        password:
+
+server:
+    port: 9816

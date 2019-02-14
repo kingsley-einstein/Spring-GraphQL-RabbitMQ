@@ -7,11 +7,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.rabbit.graphql.model.User;
 
-import org.springframework.stereotype.Component;
-
 import graphql.servlet.GraphQLContext;
 
-@Component
 public class AuthContext extends GraphQLContext {
 
     private User user;
