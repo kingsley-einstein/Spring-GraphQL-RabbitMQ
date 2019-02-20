@@ -3,11 +3,13 @@ type User {
     username: String!
     password: String!
     token: String!
+    profileId: Int
 }
 
 type Mutation {
     newUser(username: String!, password: String!): User!
     updatePassword(id: ID!, password: String!): User!
+    createProfile(id: ID!, email: String!, name: String!, birthday: String!): User!
 }
 
 type Query {

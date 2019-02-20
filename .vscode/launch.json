@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SpringGraphQlRabbitMqApplication",
+            "request": "launch",
+            "mainClass": "com.rabbit.graphql.SpringGraphQlRabbitMqApplication",
+            "projectName": "Spring-GraphQL-RabbitMQ"
+        }
+    ]
+}

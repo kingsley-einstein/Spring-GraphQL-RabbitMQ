@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class RabbitMQConfiguration {
+
     @Bean
     public TopicExchange topicExchange(@Value("${exchanger.id}") String exchange) {
         return new TopicExchange(exchange);

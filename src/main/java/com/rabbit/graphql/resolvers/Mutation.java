@@ -3,6 +3,7 @@ package com.rabbit.graphql.resolvers;
 import java.util.UUID;
 
 import com.coxautodev.graphql.tools.GraphQLMutationResolver;
+import com.rabbit.graphql.dispatcher.EventDispatcher;
 import com.rabbit.graphql.model.User;
 import com.rabbit.graphql.repository.UserRepository;
 
@@ -19,9 +20,12 @@ public class Mutation implements GraphQLMutationResolver {
     @Autowired
     private BCryptPasswordEncoder encoder;
 
+    @Autowired
+    private EventDispatcher dispatcher;
+
     public User newUser(final String username, final String password) {
         User user = new User(username, encoder.encode(password),
-                BCrypt.hashpw(UUID.fromString(username).toString(), UUID.randomUUID().toString()));
+                BCrypt.hashpw(encoder.encode(username), BCrypt.gensalt()));
 
         return userRepository.save(user);
     }
@@ -29,7 +33,12 @@ public class Mutation implements GraphQLMutationResolver {
     public User updatePassword(final Long id, final String password) {
         User user = userRepository.findOne(id);
         user.setPassword(encoder.encode(password));
-
         return userRepository.save(user);
+    }
+
+    public User createProfile(final Long id, final String email, final String name, final String birthday) {
+        User user = userRepository.findOne(id);
+
+        return user;
     }
 }

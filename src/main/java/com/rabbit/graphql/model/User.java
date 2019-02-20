@@ -25,6 +25,9 @@ public class User implements java.io.Serializable {
     @Column(name = "token")
     private String token;
 
+    @Column(name = "profile", nullable = true)
+    private Long profileId;
+
     protected User() {
     }
 
@@ -38,6 +41,10 @@ public class User implements java.io.Serializable {
         this.password = password;
     }
 
+    public void setProfileId(Long profileId) {
+        this.profileId = profileId;
+    }
+
     public Long getId() {
         return id;
     }
@@ -48,6 +55,10 @@ public class User implements java.io.Serializable {
 
     public String getToken() {
         return token;
+    }
+
+    public Long getProfileId() {
+        return profileId;
     }
 
 }

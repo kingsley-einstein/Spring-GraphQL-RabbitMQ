@@ -7,6 +7,19 @@ spring:
         url: jdbc:mysql://localhost:3306/mqdb
         username: root
         password:
+    jpa:
+        show-sql: true
+        hibernate:
+            naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5Dialect
+
+security:
+    basic:
+        enabled: false
+    ignored: /**    
 
 server:
     port: 9816

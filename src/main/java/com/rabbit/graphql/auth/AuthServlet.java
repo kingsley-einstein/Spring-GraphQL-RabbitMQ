@@ -9,12 +9,12 @@ import com.rabbit.graphql.model.User;
 import com.rabbit.graphql.repository.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+//import org.springframework.stereotype.Component;
 
+import graphql.schema.GraphQLSchema;
 import graphql.servlet.GraphQLContext;
 import graphql.servlet.SimpleGraphQLServlet;
 
-@Component
 public class AuthServlet extends SimpleGraphQLServlet {
     private static final long serialVersionUID = 1L;
 
@@ -22,7 +22,7 @@ public class AuthServlet extends SimpleGraphQLServlet {
     private UserRepository userRepository;
 
     public AuthServlet() {
-        super(null);
+        super(new GraphQLSchema(null));
     }
 
     @Override
