@@ -1,0 +1,80 @@
+repo_name: kingsley-einstein/Spring-GraphQL-RabbitMQ
+report_id: 63e0798a0f046eb16926e1fc2ba1a0a5
+repo_type: Public
+timestamp: '2023-11-09T20:18:26+00:00'
+requested_by: kingsley-einstein
+provider: github
+branch: master
+detected_tools_count: 6
+tools:
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  version: '1.8'
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source_url: pom.xml
+  detection_source: pom.xml
+  last_updated_by: Kingsley Victor
+  last_updated_on: 2019-02-14 21:05:16.000000000 Z
+- name: Spring Framework
+  description: An application framework and inversion of control container for the
+    Java platform
+  website_url: https://spring.io/projects/spring-framework
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/2006/spring-framework-project-logo.png
+  detection_source: pom.xml
+  last_updated_by: Kingsley Victor
+  last_updated_on: 2019-02-20 13:36:13.000000000 Z
+- name: GraphiQL
+  description: An in-browser IDE for exploring GraphQL
+  website_url: https://github.com/graphql/graphiql
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Database Tools
+  image_url: https://img.stackshare.io/service/7879/GraphiQL.png
+  detection_source: pom.xml
+  last_updated_by: Kingsley Victor
+  last_updated_on: 2019-02-14 21:05:16.000000000 Z
+- name: MySQL
+  description: The world's most popular open source database
+  website_url: http://www.mysql.com
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Databases
+  image_url: https://img.stackshare.io/service/1025/logo-mysql-170x170.png
+  detection_source: pom.xml
+  last_updated_by: Kingsley Victor
+  last_updated_on: 2019-02-14 21:05:16.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
+- name: Apache Camel
+  description: A versatile open source integration framework
+  website_url: https://camel.apache.org/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Application Hosting
+  sub_category: Platform as a Service
+  image_url: https://img.stackshare.io/service/3276/xWt1RFo6_400x400.jpg
+  detection_source: src/main/resources/application.yml
+  last_updated_by: Kingsley Victor
+  last_updated_on: 2019-02-14 21:05:16.000000000 Z
